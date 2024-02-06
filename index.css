@@ -1,0 +1,32 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+body {
+    background: #ffffff;
+	padding: 10px;
+}
+
+td {
+    border: 1px solid gray;
+    border-collapse: collapse;
+    width: 20px;
+    height: 20px;
+    padding: 5px;
+    text-align: center;
+}
+
+table {
+    border-spacing: 5px;
+}
+
+.horizontalLayoutContainer {
+    display: block;
+}
+
+.horizontalLayoutItem {
+    display: inline-block;
+}
+

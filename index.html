@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Iterative methods to solve SOLE</title>
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <script src="index.js"></script>
+</head>
+<body>
+    <div class="horizontalLayoutContainer">
+		<div class="horizontalLayoutItem">Solves the system of linear algebraic equations: [A][X] = [B]</div>
+		<br/>
+        <div class="horizontalLayoutItem">[A |B] = </div>
+        <div class="horizontalLayoutItem">
+            <table id="AnB">
+                <tr>
+                    <td contenteditable='true'>1</td><td contenteditable='true'>0.2</td><td contenteditable='true'>0.3</td><td contenteditable='true'>4</td>
+                </tr>
+                <tr>
+                    <td contenteditable='true'>0.5</td><td contenteditable='true'>6</td><td contenteditable='true'>0.7</td><td contenteditable='true'>8</td>
+                </tr>
+                <tr>
+                    <td contenteditable='true'>0.9</td><td contenteditable='true'>1.0</td><td contenteditable='true'>11</td><td contenteditable='true'>12</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+    <br/>
+
+    <input type="button" value="Gauss elimination" onclick="onButtonClick('gauss');"/>&nbsp;
+    <input type="button" value="Jacobi iteration" onclick="onButtonClick('jacobi');"/>&nbsp;
+    <input type="button" value="Reset" onclick="onResetButtonClick();"/>&nbsp;
+
+    <br/>
+
+    <div class="horizontalLayoutContainer">
+        <div class="horizontalLayoutItem">X = </div>
+        <div class="horizontalLayoutItem">
+            <table id="X">
+                <tr>
+                    <td contenteditable='true'>0.001</td>
+                </tr>
+                <tr>
+                    <td contenteditable='true'>0.001</td>
+                </tr>
+                <tr>
+                    <td contenteditable='true'>0.001</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+    <br/>
+
+    <label id="diff"></label>
+
+</body>
+</html>
